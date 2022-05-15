@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Create a Job</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="navBar" class="nav-bar"> 
+                <a href="#" class="a-icon"><img src="./img/undraw_cooking_lyxy (1).png" width="10%"></a>
+                <a href="./index.html" class="a-home" id="home">Home</a>
+        </nav>
+     </header>
+     <main>
+         <div id="form-container">  
+             <form action="POST" id="formCreateJob">
+                 <div id="divJobTitle" class="">
+                   <label for="jobTitle">Title</label>
+                     <input type="text" name="jobName" value="" placeholder="Title">  
+                 </div>
+                 <div id="divDescription" class="">
+                     <label for="description">Description</label>
+                         <textarea cols="100" rows="5" name="description"></textarea>
+                 </div>
+                 <div id="divTagsContainer" class="">
+                     <div class="tags">
+                         <label for="location">Location</label>
+                             <select name="location">
+                                 <option>CABA</option>
+                                 <option>PBA</option>
+                                 <option>Mendoza</option>
+                                 <option>Santa Fe</option>
+                             </select> 
+                     </div>
+                     <div class="tags">
+                        <label for="category">Categories</label>
+                             <select name="category">
+                                 <option>Cook</option>
+                                 <option>Baker</option>
+                                 <option>Management</option>
+                                 <option>Others</option>
+                             </select> 
+                     </div>
+                     <div class="tags">
+                         <label for="seniority">Seniority</label>  
+                             <select name="seniority">
+                                 <option>Apprentice</option>
+                                 <option>Junior</option>
+                                 <option>Semi-senior</option>
+                                 <option>Senior</option>
+                             </select>
+                     </div>
+                      <div class="tags">
+                        <label for="availability">Availability</label>  
+                             <select name="availability">
+                                 <option>Part-time</option>
+                                 <option>Vacation-Work</option>
+                                 <option>Full-Time</option>
+                             </select>   
+                      </div>
+                   </div>
+                   <button type="submit">Submit</button>
+             </form>
+         </div>
+     </main>
+     <script src="./createJob.js"></script>
+</body>
+</html>
