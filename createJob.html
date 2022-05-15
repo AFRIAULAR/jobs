@@ -19,16 +19,16 @@
              <form method="POST" id="formCreateJob">
                  <div id="divJobTitle" class="">
                    <label for="jobTitle">Title</label>
-                     <input type="text" name="jobName" value="" placeholder="Title">  
+                     <input type="text" name="jobName" id="jobName" value="" placeholder="Title">  
                  </div>
                  <div id="divDescription" class="">
                      <label for="description">Description</label>
-                         <textarea cols="100" rows="5" name="description"></textarea>
+                         <textarea cols="100" rows="5" name="description" id="description" value=""></textarea>
                  </div>
                  <div id="divTagsContainer" class="">
                      <div class="tags">
                          <label for="location">Location</label>
-                             <select name="location">
+                             <select name="location" id="location">
                                  <option>CABA</option>
                                  <option>PBA</option>
                                  <option>Mendoza</option>
@@ -37,7 +37,7 @@
                      </div>
                      <div class="tags">
                         <label for="category">Categories</label>
-                             <select name="category">
+                             <select name="category" id="category">
                                  <option>Cook</option>
                                  <option>Baker</option>
                                  <option>Management</option>
@@ -46,7 +46,7 @@
                      </div>
                      <div class="tags">
                          <label for="seniority">Seniority</label>  
-                             <select name="seniority">
+                             <select name="seniority" id="seniority">
                                  <option>Apprentice</option>
                                  <option>Junior</option>
                                  <option>Semi-senior</option>
@@ -55,14 +55,14 @@
                      </div>
                       <div class="tags">
                         <label for="availability">Availability</label>  
-                             <select name="availability">
+                             <select name="availability" id="availability">
                                  <option>Part-time</option>
                                  <option>Vacation-Work</option>
                                  <option>Full-Time</option>
                              </select>   
                       </div>
                    </div>
-                   <button type="submit">Submit</button>
+                   <button type="submit" id="submit">Submit</button>
              </form>
          </div>
      </main>

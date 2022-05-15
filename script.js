@@ -5,11 +5,11 @@ const queryId = (id) => document.getElementById(id)
 const getJob=()=> {
     fetch("https://6280450a1020d852057b3f0f.mockapi.io/jobs")
         .then(res => res.json())
-        .then(data => createJobDetail(data))
+        .then(data => createCardJob(data))
         .catch(err => console.log(err))
 }
 getJob()
- const createJobDetail = (jobs) =>{
+ const createCardJob = (jobs) =>{
      for (const job of jobs){
         // console.log(job)
          const { jobName, description, location, seniority, availability } = job
