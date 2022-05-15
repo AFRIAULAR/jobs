@@ -16,7 +16,50 @@
        </nav>
     </header>
     <main>
-        
+        <div id="form-container-filters">  
+            <form method="POST" id="formCreateJob">
+                    <div class="tags">
+                        <label for="location">Location</label>
+                            <select name="location">
+                                <option>CABA</option>
+                                <option>PBA</option>
+                                <option>Mendoza</option>
+                                <option>Santa Fe</option>
+                            </select> 
+                    </div>
+                    <div class="tags">
+                       <label for="category">Categories</label>
+                            <select name="category">
+                                <option>Cook</option>
+                                <option>Baker</option>
+                                <option>Management</option>
+                                <option>Others</option>
+                            </select> 
+                    </div>
+                    <div class="tags">
+                        <label for="seniority">Seniority</label>  
+                            <select name="seniority">
+                                <option>Apprentice</option>
+                                <option>Junior</option>
+                                <option>Semi-senior</option>
+                                <option>Senior</option>
+                            </select>
+                    </div>
+                     <div class="tags">
+                       <label for="availability">Availability</label>  
+                            <select name="availability">
+                                <option>Part-time</option>
+                                <option>Vacation-Work</option>
+                                <option>Full-Time</option>
+                            </select>   
+                     </div>
+                  </div>
+                  <button type="submit">Search</button>
+                  <button type="reset">Clear</button>
+            </form>
+        <div id="cardContainer">
+
+        </div>
     </main>
     <footer>
 

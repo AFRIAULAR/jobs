@@ -1,4 +1,4 @@
-const container = document.getElementById("container")
+const container = document.getElementById("cardContainer")
 
 const queryId = (id) => document.getElementById(id)
 
@@ -13,7 +13,7 @@ getJob()
      for (const job of jobs){
         // console.log(job)
          const { jobName, description, location, seniority, availability } = job
-         queryId("container").innerHTML += `
+         queryId("cardContainer").innerHTML += `
          <div>
          <h3>${jobName}</h3>
          <h3>${description}</h3>
@@ -24,4 +24,4 @@ getJob()
          `
      }
  }
-const cleanContainer = () => container.innerHTML ="" 
+const cleanContainer = () => cardContainer.innerHTML ="" 
