@@ -4,3 +4,6 @@ h1 {
 }
 
 /*# sourceMappingURL=styles.css.map */
+.form-container-edit{
+  display: none;
+} /*modificar luego con SASS*/ 

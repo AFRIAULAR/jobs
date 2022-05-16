@@ -17,7 +17,7 @@
     </header>
     <main>
         <div id="form-container-filters">  
-            <form method="POST" id="formCreateJob">
+            <form method="PUT" id="formCreateJob">
                     <div class="tags">
                         <label for="location">Location</label>
                             <select name="location">
@@ -58,8 +58,60 @@
                   <button type="reset">Clear</button>
             </form>
         <div id="cardContainer">
-
-        </div>
+            <!--Cards desde API-->
+        </div>    
+            <button type="submit" id="editar">Edit</button>
+            <button type="submit"> Delete</button>
+        
+        <div id="form-container-edit" class="form-container-edit">  
+            <form method="PUT" id="formEditJob">
+                <div id="divJobTitle" class="">
+                  <label for="jobTitle">Title</label>
+                    <input type="text" name="jobName" id="jobName" value="" placeholder="Title">  
+                </div>
+                <div id="divDescription" class="">
+                    <label for="description">Description</label>
+                        <textarea cols="100" rows="5" name="description" id="description" value=""></textarea>
+                </div>
+                <div id="divTagsContainer" class="">
+                    <div class="tags">
+                        <label for="location">Location</label>
+                            <select name="location" id="location">
+                                <option>CABA</option>
+                                <option>PBA</option>
+                                <option>Mendoza</option>
+                                <option>Santa Fe</option>
+                            </select> 
+                    </div>
+                    <div class="tags">
+                       <label for="category">Categories</label>
+                            <select name="category" id="category">
+                                <option>Cook</option>
+                                <option>Baker</option>
+                                <option>Management</option>
+                                <option>Others</option>
+                            </select> 
+                    </div>
+                    <div class="tags">
+                        <label for="seniority">Seniority</label>  
+                            <select name="seniority" id="seniority">
+                                <option>Apprentice</option>
+                                <option>Junior</option>
+                                <option>Semi-senior</option>
+                                <option>Senior</option>
+                            </select>
+                    </div>
+                     <div class="tags">
+                       <label for="availability">Availability</label>  
+                            <select name="availability" id="availability">
+                                <option>Part-time</option>
+                                <option>Vacation-Work</option>
+                                <option>Full-Time</option>
+                            </select>   
+                     </div>
+                  </div>
+                  <button type="submit" id="submit">Submit</button>
+            </form>
     </main>
     <footer>
 
